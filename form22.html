@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+*
+{
+margin: 0 auto;
+padding: 0;
+
+}
+div
+{
+width:500px;
+height:300px;
+border: 2px solid red;
+background-color: pink;
+
+}	
+
+button
+{
+background-color: lightgrey;
+width:200px;
+display: block;
+}
+button:hover
+{
+box-shadow:2px 2px 2px green;	
+}
+</style>
+</head>
+<body>
+<br><br><br>
+<h1 align=center>Form By Create Element</h1>
+<div id="lk">
+</div>
+<button onclick="c=setInterval('fr()',1000);">Click me to start create</button>
+<button onclick="clearInterval(c);">click me to stop</button>
+<script type="text/javascript">
+	var c;
+function fr()
+{
+var t=document.getElementById("lk");
+var q=document.createElement("form");
+var e=document.createElement("label");
+var k=document.createElement("label");
+var b=document.createTextNode("User Name:");
+var x=document.createTextNode("Password:");
+var w=document.createElement("input");
+var y=document.createElement("input");
+w.setAttribute("type","text");
+y.setAttribute("type","password");
+q.appendChild(e);
+e.appendChild(b);
+q.appendChild(w);
+t.appendChild(q);
+k.appendChild(x);
+q.appendChild(y);
+t.appendChild(q);
+}
+</script>
+</body>
+</html>

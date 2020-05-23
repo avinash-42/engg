@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+	*
+	{ 
+		margin:0 auto;
+		padding:0;
+     }
+div
+{
+	background-color: pink;
+	width:300px;
+	height:300px;
+	border:2px solid red;
+}	
+button
+{
+	background-color: grey;
+	box-shadow: 2px 2px 2px grey;
+}
+</style>
+</head>
+<body>
+<div id="hy">
+timing events
+</div>
+<button onclick="setTimeout('ju()',2000);">set-timeOut</button>
+<button onclick="c=setInterval('ju()',1000);">set-interval by wasid</button>
+<button onclick="clearInterval(c);">stop</button>
+<script type="text/javascript">
+function ju()
+{
+var p=document.getElementById("hy");
+var sw=document.createElement("h2");
+var qs=document.createTextNode("hello welcome");
+sw.appendChild(qs);
+p.appendChild(sw);
+document.getElementById.appendChild(p);
+}	
+</script>
+</body>
+</html>
